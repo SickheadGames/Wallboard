@@ -52,7 +52,7 @@
 		{
 			$id = (string)$bt['id'];
 
-			$buildType = GetXmlContent("$wallboard_config["teamcity-url"] . "httpAuth/app/rest/builds?locator=buildType:$id,running:any,count:1");
+			$buildType = GetXmlContent($wallboard_config["teamcity-url"] . "httpAuth/app/rest/builds?locator=buildType:$id,running:any,count:1");
       
 			$build = $buildType->children()[0];
        
