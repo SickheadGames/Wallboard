@@ -25,6 +25,7 @@
 </head>
 <body>
 
+	<!--
     <div id="tweets">
         <h2>@Sickhead</h2>
 		<?php
@@ -35,6 +36,7 @@
 			}
 		?>  
     </div>
+	-->
 
     <div id="builds">
         <h2>Builds</h2>
