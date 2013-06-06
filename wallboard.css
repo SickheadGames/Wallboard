@@ -1,0 +1,77 @@
+/*
+// SICKHEAD PROPRIETARY INFORMATION
+//
+// This software is supplied under the terms of a license agreement 
+// or nondisclosure agreement and may not be copied or disclosed 
+// except in accordance with the terms of that agreement.
+//
+//  Copyright (c) Sickhead Games, LLC
+//  All Rights Reserved
+//  www.sickheadgames.com
+*/
+
+body
+{ 
+	font: 200% "Arial", sans-serif;
+	background-color: Black;
+    color: White;
+}
+
+h2 
+{
+    margin-bottom: 0px;
+}
+
+#builds
+{
+    text-align: left;
+    float: left;
+    width: 75%;
+}
+
+.project_card
+{
+    color: White;
+    background-color: Grey;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
+
+.build_card_FAILURE
+{
+    color: White;
+    background-color: Red;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    font-size: 50%;
+}
+
+.build_card_SUCCESS
+{
+    color: White;
+    background-color: Green;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    font-size: 50%;
+}
+
+#tweets
+{
+    text-align: left;
+    float: left;
+    margin: 10px;
+}
+
+.tweet_card
+{
+    padding: 5px;
+    color: White;
+    background-color: Blue;
+    text-align: center;    
+    margin: 5px;
+}
