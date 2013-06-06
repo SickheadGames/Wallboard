@@ -31,12 +31,18 @@ apt-get install ttf-mscorefonts-installer
 Now use Git to install the Wallboard repo into the www folder:
 
 ```
-TODO!
+cd /var/www
+git clone git://github.com/SickheadGames/Wallboard.git wallboard
 ```
 
 Now edit the config.inc and fill out the details.
 
 ```
-TODO!
+leafpad wallboard/config.inc
 ```
 
+You can now open the chromium browser in kiosk mode to show the wallboard:
+
+```
+chromium --kiosk --incognito http://127.0.1.1/wallboard
+```
