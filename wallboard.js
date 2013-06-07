@@ -55,10 +55,13 @@ function update_projects()
     {
         var newCards = new Array();
 
-        $.each(projects, function (i, project) {
+        $.each(projects, function (i, project)
+        {
             var cardId = "tc_" + project.id;
             if (!$("#" + cardId).exists())
-                $("#builds_content").append('<div id="parent_' + cardId + '" class="project_card">' + project.name + '<div id="' + cardId + '" class="project_card"><div>');
+            {
+                $("#builds_content").append('<div id="parent_' + cardId + '" class="project_card"><h3>' + project.name + '</h3><div id="' + cardId + '" class="project_card"><div>');
+            }
 
             update_builds("#" + cardId, project);
 
@@ -90,7 +93,8 @@ function update_builds(projectId, project)
 		if (!card.exists())
 		{
 			$(projectId).append('<div id="'+ cardId + '"class="build_card_' + build.status +'">' + build.name + '<div>');
-			card = $("#"+cardId);
+			card = $("#" + cardId);
+			card.hide().slideDown(500);
 		}
 		else
 		{

@@ -12,13 +12,21 @@
 
 body
 { 
-	font: 200% "Arial", sans-serif;
+	font: 300% "Arial", sans-serif;
 	background-color: Black;
     color: White;
 }
 
 h2 
 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 
+{
+    font-size: 75%;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
