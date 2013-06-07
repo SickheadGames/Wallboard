@@ -101,11 +101,11 @@ function update_builds(projectId, project)
 
 	    // Store some build state on the card so we 
 	    // can react to changes in the state.
-		var wasRunning = card.data('running') == true;
-		var startRunning = !wasRunning && build.running == true;
+		var wasRunning = card.data('running');
+		var startRunning = !wasRunning && build.running == "true";
 		var buildFailed = card.data('status') == "SUCCESS" && build.status == "FAILED";
 		var buildSuccess = card.data('status') == "FAILED" && build.status == "SUCCESS";
-		card.data('running', build.running);
+		card.data('running', build.running == "true");
 		card.data('status', build.status);
 
 	    // Play the success and failure sounds.
@@ -119,7 +119,7 @@ function update_builds(projectId, project)
 		// If the build is running then start pulsing the card.							
         if (build.running && !wasRunning)
 		    card.pulse(500, 'linear', { opacity: 0.25 }, { opacity: 1 });
-		else
+        else if (!build.running && wasRunning)
 		{
 		    // Reset the css state.
 		    card.stop(true);
