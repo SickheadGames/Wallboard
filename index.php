@@ -16,14 +16,18 @@
 <head>
     <title>Wallboard</title>
 
-    <link type="text/css" href="wallboard.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="deck.core.css" />
+	<link type="text/css" rel="stylesheet" href="horizontal-slide.css" />
+    <link type="text/css" rel="stylesheet" href="wallboard.css" />
 
+	<script type="text/javascript" src="modernizr.custom.js"></script>
     <script type="text/javascript" src="jquery-2.0.1.js"></script>
+	<script type="text/javascript" src="deck.core.js"></script>
     <script type="text/javascript" src="jquery.playSound.js"></script>
 	<script type="text/javascript" src="wallboard.js"></script>
 
 </head>
-<body>
+<body class="deck-container">
 
 	<!--
     <div id="tweets">
@@ -38,10 +42,16 @@
     </div>
 	-->
 
-    <div id="builds">
-        <h2>Builds</h2>
-		<div id="builds_content"></div>
-    </div>
+	<section class="slide">
+		<div id="builds">
+			<h2>Builds</h2>
+			<div id="builds_content"></div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Other Page</h2>
+	</section>
 
     </body>
 </html>

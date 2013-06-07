@@ -137,9 +137,28 @@ function update_builds(projectId, project)
 	$(projectId).children().not(newCards.toString()).remove();
 }
 
+function update_slide(index)
+{
+    if (index == 0)
+    {
+        $.deck('go', 0)
+        setTimeout(function () { update_slide(1) }, 30000);
+    }
+    else
+    {
+        $.deck('go', 1)
+        setTimeout(function () { update_slide(0) }, 5000);
+    }
+}
+
 // Start the project update as soon as the
 // page is fully loaded.
-$(document).ready(update_projects);
+$(document).ready(function ()
+{
+    $.deck('.slide');
+    update_projects();
+    update_slide(0);
+});
 
 
 //$("#builds_content").append('loading...');

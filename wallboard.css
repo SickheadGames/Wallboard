@@ -10,34 +10,36 @@
 //  www.sickheadgames.com
 */
 
-body
+.deck-container
 { 
 	font: 300% "Arial", sans-serif;
 	background-color: Black;
     color: White;
 }
 
-h2 
+.slide h2 
 {
+    font-size: inherit;
     margin-top: 0px;
     margin-bottom: 0px;
+    border: 0;
 }
 
-h3 
+.slide h3 
 {
     font-size: 75%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#builds
+.deck-container .slide #builds
 {
     text-align: left;
     float: left;
     width: 75%;
 }
 
-.project_card
+.deck-container .project_card
 {
     color: White;
     background-color: Grey;
@@ -46,7 +48,7 @@ h3
     float: left;
 }
 
-.build_card_FAILURE
+.deck-container .build_card_FAILURE
 {
     color: White;
     background-color: Red;
@@ -57,7 +59,7 @@ h3
     font-size: 50%;
 }
 
-.build_card_SUCCESS
+.deck-container .build_card_SUCCESS
 {
     color: White;
     background-color: Green;
