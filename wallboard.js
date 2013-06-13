@@ -114,11 +114,11 @@ function update_builds(projectId, project)
 
 	    // Play the success and failure sounds.
         if (buildFailed)
-            $.playSound('./build_failed.mp3');
+            $.playSound('./build_failed.wav');
         if (buildSuccess)
-            $.playSound('./build_success.mp3');
+            $.playSound('./build_success.wav');
         if (startRunning)
-            $.playSound('./build_running.mp3');
+            $.playSound('./build_running.wav');
 
 		// If the build is running then start pulsing the card.							
         if (build.running && !wasRunning)
